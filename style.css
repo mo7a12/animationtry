@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    background-color: aqua;
+    position: fixed;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    display: flex;
+    /* 10 in top and bottom  & 200 in right abd left */
+}
+
+.logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(128, 18, 18);
+    font-weight: 900;
+    font-size: 1.8em;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4em;
+    color: rgb(128, 18, 18);
+    padding-left: 35px;
+}
+
+nav a:hover {
+    color: rgb(88, 21, 151);
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    line-height: 100vh;
+    display: flex;
+    align-items: center;
+   /*  background: url('/images/moha.jpg') no-repeat; */
+    border: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: black;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: brown;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: black;
+    background-color: blue;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 550;
+    display: inline-block;
+    padding: .9375em 2.185em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 1.5s ease;
+}
+
+.main-btn:hover {
+    background-color: blueviolet;
+    transform: scale(1.1, 1.1);
+}
+
+.social a {
+    color: black;
+    font-size: 1.7em;
+    letter-spacing: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.mycontent {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(245, 253, 253);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(214, 97, 97, 0.15);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px;
+    transition: .7s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    color: rgb(121, 75, 20);
+}
+
+.icon {
+    color: blue;
+    justify-content: center;
+    text-align: center;
+    font-size: .9em;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: blueviolet;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.project {
+    background-color: bisque;
+}
+
+.project .mycontent {
+    margin-top: 30px;
+}
+
+.pro-card {
+    background-color: aquamarine;
+    border: 3px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 20px;
+    transition: .7s ease-in;
+}
+
+.pro-card:hover {
+    transform: scale(1.1);
+}
+
+.pro-card:hover .img-pro {
+    opacity: .5%;
+}
+
+.img-pro img {
+    width: 100%;
+}
+
+.info-pro {
+    padding: 1em;
+}
+
+.pro-cat {
+    font-size: .8em;
+    color: black;
+}
+
+.pro-name {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.more {
+    text-decoration: none;
+    color: blue;
+    transition: .7s ease;
+}
+
+.more:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    background-color: antiquewhite;
+    color: black;
+    padding: 2em;
+    justify-content: space-between;
+    display: flex;
+    display: inline;
+    position: fixed;
+}
+
+.pra {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.pra span {
+    font-size: 2em;
+    font-weight: 600;
+    color: blue;
+}
+
+.footer .social {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+}
